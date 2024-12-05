@@ -11,9 +11,9 @@ bool runGame = true;
 while (runGame)
 {
     Console.WriteLine($"{grid[0]} | {grid[1]} | {grid[2]}");
-    Console.WriteLine("--|---|--");
+    Console.WriteLine("-----------");
     Console.WriteLine($"{grid[3]} | {grid[4]} | {grid[5]}");
-    Console.WriteLine("--|---|--");
+    Console.WriteLine("-----------");
     Console.WriteLine($"{grid[6]} | {grid[7]} | {grid[8]}");
     Console.Write($"Player {currentPlayer} enter number of cell: ");
     int cell;
@@ -48,9 +48,9 @@ while (runGame)
         (grid[2] == currentPlayer && grid[4] == currentPlayer && grid[6] == currentPlayer))
     {
         Console.WriteLine($"{grid[0]} | {grid[1]} | {grid[2]}");
-        Console.WriteLine("--|---|--");
+        Console.WriteLine("-----------");
         Console.WriteLine($"{grid[3]} | {grid[4]} | {grid[5]}");
-        Console.WriteLine("--|---|--");
+        Console.WriteLine("-----------");
         Console.WriteLine($"{grid[6]} | {grid[7]} | {grid[8]}");
         Console.WriteLine($"Player {currentPlayer} won");
         runGame = false;
@@ -58,9 +58,9 @@ while (runGame)
     else if (counter == 9)
     {
         Console.WriteLine($"{grid[0]} | {grid[1]} | {grid[2]}");
-        Console.WriteLine("--|---|--");
+        Console.WriteLine("-----------");
         Console.WriteLine($"{grid[3]} | {grid[4]} | {grid[5]}");
-        Console.WriteLine("--|---|--");
+        Console.WriteLine("-----------");
         Console.WriteLine($"{grid[6]} | {grid[7]} | {grid[8]}");
         Console.WriteLine($"Draw");
         runGame = false;
